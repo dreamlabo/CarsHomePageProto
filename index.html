@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c43c1a8058.js" crossorigin="anonymous"></script>
+    <title>Cars Header</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="container flex">
+            <a href="" class="logo">CARS</a>
+            <nav class="main-links--wrapper">
+                <ul id="primary-navigation"
+                        class="main-links"
+                        aria-label="primary navigation" 
+                        aria-hidden="false" >
+                    <li><a href="">MEETINGS</a></li>
+                    <li><a href="">UPCOMING SHOWS</a></li>
+                    <li><a href="">WHO WE ARE</a></li>
+                    <li><a href="">SIGN IN</a></li>
+                </ul>
+            </nav>
+            <!-- <ul class="social-icons"
+                    aria-label="social media links" >
+                <li>
+                    <a aria-label="link to colorado art rock society mastodon social media page" href="">
+                        <i class="fa-brands fa-mastodon fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="link to colorado art rock society instagram social media page" href="">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="link to colorado art rock society facebook social media page" href="">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+            </ul> -->
+            <button class="nav-bars" 
+                    id="mobile-menu-btn"
+                    aria-hidden="true"
+                    aria-expanded="false">
+                <div class="bar bar-one"></div>
+                <div class="bar bar-two"></div>
+                <div class="bar bar-three"></div>
+            </button>
+            <nav class="mobile-menu"
+                    id="mobile-menu">
+                <ul id="mobile-navigation"
+                        class=""
+                        aria-label="primary navigation" 
+                        aria-hidden="true" >
+                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">00</span>HOME</a></li>
+                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">01</span>UPCOMING SHOWS</a></li>
+                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">02</span>WHO WE ARE</a></li>
+                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">03</span>SIGN IN</a></li>                   
+                </ul>
+            </nav>
+        </div>
+       
+    </header>
+    <main class="main-page-wrapper">
+        <section class="section-wrapper">
+            <div class="hero-section">
+                <div class="hero-section--left">
+                    <h1 class="hero-main-title">
+                        Colorado Art Rock Society
+                    </h1>
+                    <p class="hero-sub-title">
+                        Colorado's source for
+                        <br>all things <span class="hero-sub-title-span">Progressive Rock</span>
+                    </p>
+                    <button class="btn-main">BECOME A MEMBER</button>
+                </div>
+                <div class="hero-section--meeting-info">
+                    <h2 class="hero-section--meeting-title">Next <span class="meeting-span">Meeting</span></h2>
+
+                    <div class="meeting-info__container">
+                        <p class="meeting-info__day">Saturday,</p>
+                        <p class="meeting-info__month">May</p>
+                        <div class="meeting-info__date-number">29</div>
+                        <p class="meeting-time">6:00pm<p> 
+                    </div>
+                    <button class="btn-meeting-details"><span>MEETING INFO</span><i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                   
+            </div>
+        </section>
+    </main>
+   
+</body>
+</html>
