@@ -181,8 +181,8 @@ a {
     padding-top: 2rem;   
     background-color: var(--clr-gray);
     color: var(--clr-white);
-    font-size: 1.5rem;
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    /* font-size: 1.5rem; */
+    font-size: clamp(1.3rem, 3vw, 2rem);
     transform: scaleX(0);
     transform-origin: 100%;
     transition: transform .2s ease-in-out;
@@ -498,7 +498,7 @@ a {
     color: var(--clr-main);
     /* color: var(--clr-white); */
     border: 3px solid var(--clr-main);
-    padding: .5em 1.4em;
+    padding: .7em 1.4em;
     margin-right: .1rem;
     font-weight: 500;
     /* font-size: clamp(1.1rem, 2.5vw, 1rem); */
