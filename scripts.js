@@ -28,3 +28,29 @@ function openMobileMenu() {
     console.log('clicked open')
     mobileMenuBtn.classList.add("active")
 }
+
+
+
+
+// Resize observer 
+const heroSection = document.getElementById("hero-section");
+const backgroundImage = document.getElementById("bkgd-image")
+
+const resizeObserver = new ResizeObserver((entries) => {
+    for (const entry of entries) {
+        console.log(heroSection.getBoundingClientRect().height);
+        backgroundImage.style.height = `${heroSection.getBoundingClientRect().height}px`
+        console.log("Height: ", backgroundImage)
+
+
+
+    }
+});
+
+
+
+
+
+
+
+resizeObserver.observe(heroSection)
