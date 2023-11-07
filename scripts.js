@@ -1,7 +1,7 @@
 const mobileMenuBtn = document.getElementById("mobile-menu-btn")
 let isMobileMenuOpen = false;
 const mobileMenu = document.getElementById("mobile-menu");
-
+const mainPageWrapper = document.getElementById("main-page-wrapper")
 const mobileNavLinks = document.getElementsByClassName("mobile-nav-link");
 
 mobileMenuBtn.addEventListener('click', handleMobileMenuBtn)
@@ -16,7 +16,8 @@ function handleMobileMenuBtn(event) {
 function closeMobileMenu() {
     isMobileMenuOpen = false;
     mobileMenu.classList.remove("menu-open")
-    mobileMenuBtn.classList.remove("active")
+    mobileMenuBtn.classList.remove("active");
+    mainPageWrapper.style.zIndex = "1"
     console.log('clicked close')
 
 }
@@ -26,7 +27,8 @@ function openMobileMenu() {
     isMobileMenuOpen = true
     mobileMenu.classList.add("menu-open")
     console.log('clicked open')
-    mobileMenuBtn.classList.add("active")
+    mobileMenuBtn.classList.add("active");
+    mainPageWrapper.style.zIndex = "-1"
 }
 
 
