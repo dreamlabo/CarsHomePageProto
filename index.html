@@ -14,64 +14,42 @@
 <body>
     <header class="header-wrapper">
         <div class="container flex">
-            <a href="" class="logo">CARS</a>
+            <a href="/" class="logo">CARS</a>
             <nav class="main-links--wrapper">
                 <ul id="primary-navigation"
                         class="main-links"
-                        aria-label="primary navigation" 
-                        aria-hidden="false" >
+                        aria-label="primary navigation">
                     <li><a href="">MEETINGS</a></li>
-                    <li><a href="">UPCOMING SHOWS</a></li>
+                    <li><a href="/upcomingEvents.html">UPCOMING EVENTS</a></li>
                     <li><a href="">WHO WE ARE</a></li>
                     <li><a href="">SIGN IN</a></li>
                 </ul>
             </nav>
-            <!-- <ul class="social-icons"
-                    aria-label="social media links" >
-                <li>
-                    <a aria-label="link to colorado art rock society mastodon social media page" href="">
-                        <i class="fa-brands fa-mastodon fa-2x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a aria-label="link to colorado art rock society instagram social media page" href="">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a aria-label="link to colorado art rock society facebook social media page" href="">
-                        <i class="fa-brands fa-facebook fa-2x"></i>
-                    </a>
-                </li>
-            </ul> -->
             <button class="nav-bars" 
                     id="mobile-menu-btn"
-                    aria-hidden="true"
                     aria-expanded="false">
                 <div class="bar bar-one"></div>
                 <div class="bar bar-two"></div>
                 <div class="bar bar-three"></div>
             </button>
             <nav class="mobile-menu"
-                    id="mobile-menu">
+                    id="mobile-menu"
+                    aria-hidden="true">
                 <ul id="mobile-navigation"
                         class=""
-                        aria-label="primary navigation" 
-                        aria-hidden="true" >
-                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">00</span>HOME</a></li>
-                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">01</span>UPCOMING SHOWS</a></li>
-                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">02</span>WHO WE ARE</a></li>
-                    <li class="mobile-nav-link"><a href="/"><span aria-hidden="true">03</span>SIGN IN</a></li>                   
+                        aria-label="primary navigation">
+                    <li class="mobile-nav-link"><a tabindex="-1" href="/"><span aria-hidden="true">00</span>HOME</a></li>
+                    <li class="mobile-nav-link"><a tabindex="-1" href="/upcomingEvents.html"><span aria-hidden="true">01</span>UPCOMING EVENTS</a></li>
+                    <li class="mobile-nav-link"><a tabindex="-1" href="/"><span aria-hidden="true">02</span>WHO WE ARE</a></li>
+                    <li class="mobile-nav-link"><a tabindex="-1" href="/"><span aria-hidden="true">03</span>SIGN IN</a></li>                   
                 </ul>
             </nav>
         </div>
        
     </header>
     <main id="main-page-wrapper" class="main-page-wrapper">
-        
         <div id="bkgd-image-overlay" class="overlay"></div>
         <img id="bkgd-image" class="background-image-one" src="./images/backgroundImage.png" alt="">
-       
         <section class="section-wrapper">
             <div class="hero-section" id="hero-section">
                 <div class="hero-section--left">
@@ -87,7 +65,6 @@
                 </div>
                 <div class="hero-section--meeting-info">
                     <h2 class="hero-section--meeting-title">Next <span class="meeting-span">Meeting</span></h2>
-
                     <div class="meeting-info__container">
                         <p class="meeting-info__day">Saturday,</p>
                         <p class="meeting-info__month">November</p>
@@ -96,12 +73,8 @@
                     </div>
                     <button class="btn-meeting-details"><span>MEETING INFO</span><i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
-                   
             </div>
         </section>
-      
-       
     </main>
-   
 </body>
 </html>

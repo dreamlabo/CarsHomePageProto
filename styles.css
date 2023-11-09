@@ -8,6 +8,7 @@
 
 :root {
     --clr-black: #121212;
+    /* rgb = 18, 18 18 */
     
     --clr-white: #CCCCCC;
     --clr-gray:  #21272f;
@@ -45,9 +46,6 @@ a {
     margin-top: 2rem;
 }
 
-
-
-
 .background-image-one {
     position: absolute;
     width: auto;
@@ -56,8 +54,6 @@ a {
     right: 0;
     z-index: -2;
     filter: grayscale(95%);
-
-   
 }
 
 .overlay {
@@ -68,14 +64,13 @@ a {
     height: 690px;
     top: 0;
     right: 0;
-    background: linear-gradient(135deg, rgba(12,12,12, 1.0) 20%,
-                                        rgba(12,12,12, 0.9) 35%, 
-                                        rgba(12,12,12, 0.6) 70%, 
-                                        rgba(12,12,12, 0.1) 100%); 
+    background: linear-gradient(135deg, rgba(18,18,18, 1.0) 20%,
+                                        rgba(18,18,18, 0.8) 35%, 
+                                        rgba(18,18,18, 0.6) 50%, 
+                                        rgba(18,18,18, 0.0) 100%); 
 }
 
-@media (min-width: 1150px) {
-    .section-wrapper {
+@media (min-width: 1150px) {    .section-wrapper {
         height: 700px;
         overflow: hidden;
     }
@@ -87,10 +82,10 @@ a {
     }
 
     .overlay {
-        background: linear-gradient(135deg, rgba(12,12,12, 1.0) 30%,
-                                            rgba(12,12,12, 0.8) 60%, 
-                                            rgba(12,12,12, 0.6) 70%, 
-                                            rgba(12,12,12, 0.3) 100%); 
+        background: linear-gradient(135deg, rgba(18,18,18, 1.0) 30%,
+                                            rgba(18,18,18, 0.8) 40%, 
+                                            rgba(18,18,18, 0.6) 50%, 
+                                            rgba(88, 65, 65, 0) 100%); 
                                         
     }
   }
@@ -169,20 +164,16 @@ a {
 .main-links a:focus,
 .main-links a:hover {
     background-color: var(--clr-black);
-    background-color: yellow;
     color: var(--clr-accent-one);
 }
 
 .nav-bars {
     display: none;
-
-
     background: transparent;
     border: none;
     height: 50px;
     width: 50px;
     position: relative;
-  
     padding: 1rem;
     margin-right: 1rem;
     cursor: pointer;
@@ -275,14 +266,12 @@ a {
 .main-page-wrapper {
     position: relative;
     z-index: 0;
-  
 }
 
 .section-wrapper {
     width: calc(100% - 4rem);
     max-width: 1530px;
     margin: 0 auto;
-    /* position: relative; */
 }
 
 .hero-section {
@@ -396,7 +385,6 @@ a {
     max-width: 220px;
     height: 1px;
     background: var(--clr-accent-one);
-  
 }
 
 @media screen and (max-width: 1000px) {
@@ -406,13 +394,9 @@ a {
     }
 
     .overlay {
-
-        
-        background: linear-gradient(110deg, rgba(12,12,12, 1.0) 30%,
-                                            rgba(12,12,12, 0.8) 45%,
-                                            rgba(12,12,12, 0.1) 100%); 
-    /* background: linear-gradient(90deg, rgba(18,18,18, 1.0) 10%,rgba(18,18,18, ) 50%, rgba(18,18,18, 0.8) 70%, rgba(18,18,18, 0.0) 100%);  */
- 
+        background: linear-gradient(110deg, rgba(18,18,18, 1.0) 25%,
+                                            rgba(18,18,18, 0.8) 35%,
+                                            rgba(18,18,18, 0.0) 100%); 
     }
 }
 
@@ -423,13 +407,9 @@ a {
 
     }
     .overlay {
-
-        background: linear-gradient(110deg, rgba(12,12,12, 1.0) 30%,
-                                            rgba(12,12,12, 0.7) 40%,    
-                                
-                                            rgba(12,12,12, 0.1) 100%); 
-        /* background: linear-gradient(90deg, rgba(18,18,18, 1.0) 10%,rgba(18,18,18, ) 50%, rgba(18,18,18, 0.8) 70%, rgba(18,18,18, 0.0) 100%);  */
-     
+        background: linear-gradient(110deg, rgba(18,18,18, 1.0) 20%,
+                                            rgba(18,18,18, 0.8) 30%,
+                                            rgba(18,18,18, 0.0) 100%); 
         }
     
 }
@@ -442,7 +422,6 @@ a {
 
 .meeting-span {
     position: relative;
- 
 }
 
 .meeting-span::after {
@@ -453,7 +432,6 @@ a {
     background: var(--clr-accent-one);
     width: 81%;
     height: 1px;
-
 }
 
 @media  (max-width: 650px)   {
