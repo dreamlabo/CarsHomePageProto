@@ -24,10 +24,12 @@ function closeMobileMenu() {
         i.firstChild.tabIndex = -1;
    }
 
-   document.removeEventListener('keydown', navigateMenu)
+   document.removeEventListener('keydown', navigateMenu);
+   window.removeEventListener('resize', handleScreenResizeMobileMenu);
 }
 
-function openMobileMenu() {
+function openMobileMenu(event) {
+   
     mobileMenuBtn.setAttribute('aria-expanded', "true");
     mobileMenu.setAttribute('aria-hidden', "false");
     isMobileMenuOpen = true
@@ -40,11 +42,16 @@ function openMobileMenu() {
    }
 
    document.addEventListener('keydown', navigateMenu)
+   window.addEventListener('resize', handleScreenResizeMobileMenu)
+}
+
+function handleScreenResizeMobileMenu() {
+    if(window.innerWidth > 1000) {
+        closeMobileMenu();
+    }
 }
 
 function navigateMenu(e) {
-    console.log(e.key)
-
     if (e.key === 'Tab') {
         // If Shift key is also held, move focus backward
         if (e.shiftKey && document.activeElement === firstFocusElem) {
@@ -58,6 +65,8 @@ function navigateMenu(e) {
         }
       }
 }
+
+
 
 
 
