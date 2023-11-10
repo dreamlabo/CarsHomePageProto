@@ -53,11 +53,10 @@
 }
 
 .headliner-act {
+    margin-bottom: .1em;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1;
-    margin-bottom: .1em;
-    /* max-width: 80%; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

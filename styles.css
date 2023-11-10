@@ -9,7 +9,6 @@
 :root {
     --clr-black: #121212;
     /* rgb = 18, 18 18 */
-    
     --clr-white: #CCCCCC;
     --clr-gray:  #21272f;
     --clr-main: #c59f63;
@@ -18,9 +17,7 @@
 }
 
 body {
-    /* font-family: 'Josefin Sans', sans-serif; */
     font-family: 'Jost', sans-serif;
-    /* position: relative; */
 }
 
 li {
@@ -49,7 +46,7 @@ a {
 .background-image-one {
     position: absolute;
     width: auto;
-    height: 700px;
+    height: 100%;
     top: 0;
     right: 0;
     z-index: -2;
@@ -61,16 +58,18 @@ a {
     z-index: -1;
     pointer-events: none;
     width: 100%;
-    height: 690px;
+    height: 100%;
     top: 0;
     right: 0;
+    bottom: 0;
     background: linear-gradient(135deg, rgba(18,18,18, 1.0) 20%,
                                         rgba(18,18,18, 0.8) 35%, 
                                         rgba(18,18,18, 0.6) 50%, 
                                         rgba(18,18,18, 0.0) 100%); 
 }
 
-@media (min-width: 1150px) {    .section-wrapper {
+@media (min-width: 1150px) {    
+    .section-wrapper {
         height: 700px;
         overflow: hidden;
     }
@@ -85,8 +84,7 @@ a {
         background: linear-gradient(135deg, rgba(18,18,18, 1.0) 30%,
                                             rgba(18,18,18, 0.8) 40%, 
                                             rgba(18,18,18, 0.6) 50%, 
-                                            rgba(88, 65, 65, 0) 100%); 
-                                        
+                                            rgba(88, 65, 65, 0) 100%);                             
     }
   }
 
@@ -94,7 +92,6 @@ a {
     display: flex;
     position: sticky;
     z-index: 10;
-    /* opacity: .5; */
     top: 0;
     margin: 0;
     padding: 0;
@@ -181,7 +178,6 @@ a {
 
 .bar {
     position: absolute;
-
     top: 50%;
     left: 50%;
     width: 70%;
@@ -220,14 +216,12 @@ a {
     position: absolute;
     top: 100%;
     right: 0;
-    /* isolation: isolate; */
     min-width: 100%;
     min-height: calc(100vh - 53px);
     padding-top: 2rem;   
     background-color: var(--clr-gray);
     color: var(--clr-white);
-    /* font-size: 1.5rem; */
-    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-size: clamp(1.1rem, 3vw, 1.8rem);
     transform: scaleX(0);
     transform-origin: 100%;
     transition: transform .2s ease-in-out;
@@ -245,7 +239,7 @@ a {
 
 .mobile-nav-link a {
     display: block;
-    padding: clamp(1rem, 2vw, 3rem) 0;
+    padding: clamp(.5rem, 2vw, 3rem);
     outline-offset: -2px;
     font-weight: 400;
 }
@@ -257,8 +251,8 @@ a {
 }
 
 .mobile-nav-link span {
-    padding-left: clamp(2rem, 10vw, 10rem);
-    padding-right: clamp(2rem, 10vw, 3rem);
+    padding-left: clamp(1rem,7vw, 15rem);
+    padding-right: clamp(1rem,7vw, 3rem);
     font-weight: 500;
     opacity: .5;
 }
@@ -281,7 +275,6 @@ a {
     margin-left: 2rem;
     margin-right: 2rem;
     position: relative;
-    /* z-index: auto; */
 }
 
 .hero-section--left {
@@ -318,8 +311,6 @@ a {
     position: relative;
     color: var(--clr-main);
     font-style: italic;
- 
-    isolation: isolate;
 }
 
 .hero-sub-title-span::after {
@@ -330,32 +321,28 @@ a {
     height: 1px;
     width: clamp(103%, 25vw, 400px);
     background: var(--clr-accent-one);
-
 }
 
 .btn-main {
+    position: relative;
     margin-top: 2.5rem;
     /* margin-top: clamp(1.5rem, 3vw, 2.5rem); */
     padding: .6em 2.5em;
+    border: 3px solid transparent;
     background: var(--clr-main);
-    /* border: none; */
     font-weight: 500;
     font-size: 1.5rem;
-    /* font-size: clamp(1.1rem, 2.3vw, 1.5rem); */
+    font-size: clamp(1.1rem, 2.3vw, 1.5rem);
     line-height: 1;
     letter-spacing: .1rem;
     cursor: pointer;
-    position: relative;
-    border: 3px solid transparent;
-
 }
 
 .btn-main:focus,
 .btn-main:hover {
     background: var(--clr-black);
     color: var(--clr-accent-one);
-    border: 3px solid var(--clr-accent-one);
-   
+    border: 3px solid var(--clr-accent-one);  
 }
 
 .hero-section--meeting-info {
@@ -404,7 +391,6 @@ a {
     .hero-section--meeting-title::before {
         width: 15vw;
         max-width: 220px;
-
     }
     .overlay {
         background: linear-gradient(110deg, rgba(18,18,18, 1.0) 20%,
@@ -601,7 +587,6 @@ a {
     .btn-meeting-details {
         font-size: clamp(1.1rem, 2.3vw, 1.3rem);
     }
-    
 }
 
 @media  (max-width: 650px)   {
@@ -614,6 +599,7 @@ a {
         margin-right: .5rem;
        
     }
+
     .hero-section {
         grid-template-columns: 1fr;
         margin-left: 1rem;

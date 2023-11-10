@@ -49,6 +49,33 @@ const events = [
         image: "./images/theOceanCollective.jpg"
         
     },
+    {
+        headliner: "Queensryche",
+        supportActs: ["Armored Saint"],
+        date: new Date("2024,04,03"),
+        time: "6:00pm",
+        venue: "Gothic Theater",
+        city: "Englewood",
+        state: "Co",
+        ticketURL: "https://www.gothictheatre.com/events/detail/?event_id=509530",
+        bandInfo: "http://www.queensrycheofficial.com/",
+        image: "./images/Queensryche.jpeg"
+        
+    },
+    {
+        headliner: "Geoff Tate",
+        supportActs: [],
+        date: new Date("2024,04,12"),
+        time: "6:00pm",
+        venue: "Gothic Theater",
+        city: "Englewood",
+        state: "Co",
+        ticketURL: "https://www.axs.com/artists/121926/geoff-tate-tickets",
+        bandInfo: "https://www.geofftate.com/",
+        image: "./images/GeoffTate.jpg"
+        
+    },
+    
 
 ]
 
