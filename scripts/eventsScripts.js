@@ -2,45 +2,91 @@ const events = [
     {
         headliner: "The Musical Box",
         supportActs: [],
-        date: "Fri, Dec 8, 2023",
+        date: new Date("2023,12,08"),
         time: "8:00pm",
         venue: "Paramount Theater",
         city: "Denver",
         state: "Co",
         ticketURL: "https://www.ticketmaster.com/the-musical-box-denver-colorado-12-08-2023/event/1E005EFF907E1B43?camefrom=CFC_KSE_gbjbnveBcU69DVgYv0JfZg&utm_source=gbjbnveBcU69DVgYv0JfZg&utm_medium=gbjbnveBcU69DVgYv0JfZg&utm_campaign=gbjbnveBcU69DVgYv0JfZg",
-        bandInfo: "https://www.themusicalbox.net/"
+        bandInfo: "https://www.themusicalbox.net/",
+        image: "./images/musicalBox.jpg"
     },
     {
         headliner: "Haken",
-        supportActs: [],
-        date: "Thur, Feb 15, 2024",
+        supportActs: ["An Evening With..."],
+        date: new Date("2024,02,15"),
         time: "8:00pm",
         venue: "Boulder Theater",
         city: "Boulder",
         state: "Co",
         ticketURL: "https://www.axs.com/events/502001/haken-tickets",
-        bandInfo: "https://hakenmusic.com/"
-    },
-    {
-        headliner: "The Ocean",
-        supportActs: ["The World Is A Beautiful Place & I Am No Longer Afraid To Die"],
-        date: "Thur, Feb 15, 2024",
-        time: "8:00pm",
-        venue: "Boulder Theater",
-        city: "Boulder",
-        state: "Co",
-        ticketURL: "https://www.axs.com/events/510028/the-ocean-tickets?q=the+Ocean",
-        bandInfo: "https://www.theoceancollective.com/"
+        bandInfo: "https://hakenmusic.com/",
+        image: "./images/haken-band-image.jpg"
     },
     {
         headliner: "Soen",
         supportActs: [],
-        date: "Sun, June 9, 2024",
+       
+        date: new Date("2024,06,09"),
         time: "7:30pm",
         venue: "Bluebird Theater",
         city: "Denver",
         state: "Co",
         ticketURL: "https://www.axs.com/events/498617/soen-tickets",
-        bandInfo: "https://soenmusic.com/"
-    }
+        bandInfo: "https://soenmusic.com/",
+        image: "./images/soen.jpg"
+    },
+    {
+        headliner: "The Ocean",
+        supportActs: ["The World Is A Beautiful Place & I Am No Longer Afraid To Die"],
+        date: new Date("2024,02,20"),
+        time: "8:00pm",
+        venue: "Bluebird Theater",
+        city: "Denver",
+        state: "Co",
+        ticketURL: "https://www.axs.com/events/510028/the-ocean-tickets?q=the+Ocean",
+        bandInfo: "https://www.theoceancollective.com/",
+        image: "./images/theOceanCollective.jpg"
+        
+    },
+
 ]
+
+const whereToPlaceEvents = document.getElementById("cards-section");
+events.sort((a, b) => a.date - b.date);
+
+events.forEach(event => {
+    const eventTemplate = document.getElementById("event-item-template");
+    const eventItem = eventTemplate.content.cloneNode(true);
+
+    eventItem.querySelector(".band-photo").src = event.image;
+    eventItem.querySelector(".band-photo").alt = `image of ${event.headliner}`;
+    eventItem.querySelector(".headliner-act").innerText = event.headliner;
+
+    if(event.supportActs.length > 0) {
+        if(event.supportActs.includes("An Evening With...")) {
+            eventItem.querySelector(".support-acts").innerText = event.supportActs[0];
+        }
+        else {
+            const supportActsString = event.supportActs.join(', ');
+            eventItem.querySelector(".support-acts").innerText = `with ${supportActsString}`;
+        }
+    }
+    else {
+        eventItem.querySelector(".support-acts").innerText = `\u00A0`;
+    }
+
+    eventItem.querySelector(".event-date").innerText = `${event.date.toLocaleString('en-US', 
+                                                            {weekday: 'short', 
+                                                                year: 'numeric', 
+                                                                month: 'short', 
+                                                                day: 'numeric' })}`;
+
+    eventItem.querySelector(".event-time").innerText = event.time;
+    eventItem.querySelector(".event-venue").innerText = event.venue;
+    eventItem.querySelector(".event-location").innerText = `${event.city}, ${event.state}`;
+    eventItem.querySelector(".btn-tickets").href = event.ticketURL;
+    eventItem.querySelector(".btn-artist-info").href = event.bandInfo;
+
+    whereToPlaceEvents.append(eventItem);
+});

@@ -53,8 +53,8 @@
 
         <h1 class="event-page-header">Upcoming Events</h1>
 
-        <section class="cards-section">
-            <div class="card-container">
+        <section id="cards-section" class="cards-section">
+            <!-- <div class="card-container">
                 <img src="./images/haken-band-image.jpg" alt="image of Haken band" class="band-photo">
                 <div class="details-container">
                     <div class="concert-info-container">
@@ -119,11 +119,33 @@
                         <a class="btn-event btn-artist-info" href="https://hakenmusic.com/">Artist Info</a>
                     </div>
                 </div>
-            </div>
-       
-
+            </div> -->
         </section>
-
     </main>
+
+    <template id="event-item-template">
+        <div class="card-container">
+            <img src="" alt="image of Haken band" class="band-photo">
+            <div class="details-container">
+                <div class="concert-info-container">
+                    <div class="bands-container">
+                        <h2 class="headliner-act"></h2>
+                        <h3 class="support-acts"></h3>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <p class="event-date">Thur, Feb. 15, 2024</p>
+                    <p class="event-time">8:00pm</p>
+                    <p class="event-venue">Boulder Theater</p>
+                    <p class="event-location">Boulder, Co.</p>
+                </div>
+                <div class="event-btn-container">
+                    <a class="btn-event btn-tickets" href="">Tickets</a>
+                    <a class="btn-event btn-artist-info" href="https://hakenmusic.com/">Artist Info</a>
+                </div>
+            </div>
+        </div>
+
+    </template>
 </body>
 </html>
