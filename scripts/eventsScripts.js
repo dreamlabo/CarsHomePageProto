@@ -75,6 +75,19 @@ const events = [
         image: "./images/GeoffTate.jpg"
         
     },
+    {
+        headliner: "Geddy Lee",
+        supportActs: ["MY EFFIN' LIFE In Conversation"],
+        date: new Date("2023,11,30"),
+        time: "8:00pm",
+        venue: "Paramount Theatre",
+        city: "Denver",
+        state: "Co",
+        ticketURL: "https://www.ticketmaster.com/event/1E005F3CE9994033",
+        bandInfo: "https://www.rush.com/",
+        image: "./images/GeddyLeeBook.jpg"
+        
+    },
     
 
 ]
@@ -96,7 +109,7 @@ events.forEach(event => {
         }
         else {
             const supportActsString = event.supportActs.join(', ');
-            eventItem.querySelector(".support-acts").innerText = `with ${supportActsString}`;
+            eventItem.querySelector(".support-acts").innerText = `${supportActsString}`;
         }
     }
     else {
