@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/aboutStyles.css">
+    <script src="scripts.js" defer></script>
+    <!-- <script src="./scripts/homePageScripts.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c43c1a8058.js" crossorigin="anonymous"></script>
+    <title>CARS HOME</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="container flex">
+            <a href="index.html" class="logo">CARS</a>
+            <nav class="main-links--wrapper">
+                <ul id="primary-navigation"
+                        class="main-links"
+                        aria-label="primary navigation">
+                    <li><a href="">MEETINGS</a></li>
+                    <li><a href="upcomingEvents.html">UPCOMING EVENTS</a></li>
+                    <li><a href="about.html">WHO WE ARE</a></li>
+                    <li><a href="">SIGN IN</a></li>
+                </ul>
+            </nav>
+            <button class="nav-bars" 
+                    id="mobile-menu-btn"
+                    aria-expanded="false">
+                <div class="bar bar-one"></div>
+                <div class="bar bar-two"></div>
+                <div class="bar bar-three"></div>
+            </button>
+            <nav class="mobile-menu"
+                    id="mobile-menu"
+                    aria-hidden="true">
+                <ul id="mobile-navigation"
+                        class=""
+                        aria-label="primary navigation">
+                    <li class="mobile-nav-link"><a tabindex="-1" href="index.html"><span aria-hidden="true">00</span>HOME</a></li>
+                    <li class="mobile-nav-link"><a tabindex="-1" href="upcomingEvents.html"><span aria-hidden="true">01</span>UPCOMING EVENTS</a></li>
+                    <li class="mobile-nav-link"><a tabindex="-1" href="about.html"><span aria-hidden="true">02</span>WHO WE ARE</a></li>
+                    <li class="mobile-nav-link"><a tabindex="-1" href="/"><span aria-hidden="true">03</span>SIGN IN</a></li>                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main-page-wrapper" class="main-page-wrapper">
+            <div class="section-wrapper-two">
+                <h1 class="about-page-title" >Who We Are</h1>
+            </div>
+            
+            <section class="about-section-wrapper--grid">
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>The Colorado Art Rock Society's mission is to foster a vibrant community that revolves around the exploration, dialogue, and appreciation of both emerging and timeless progressive rock music.</p>
+                    <p>We are dedicated to creating a space where enthusiasts can engage in meaningful discussions, discover new artists, respectfully disagree, and offer support, cultivating a shared passion for the diverse and evolving world of progressive rock.</p>
+                </div>
+                <img class="about-logo" src="./images/logo-1.png" alt="">
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
