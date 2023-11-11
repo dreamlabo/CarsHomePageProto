@@ -686,7 +686,7 @@ a {
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin-left: 2rem;
-    margin-right: 1.3rem;
+    margin-right: 2.3rem;
     /* border: 1px solid red; */
 }
 
@@ -698,11 +698,10 @@ a {
 
 .latest-news-container {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 355px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     padding: 2rem 0;
-    border: 1px solid white;
+
 }
 
 .card__latest-news {
@@ -712,6 +711,42 @@ a {
     background: var(--clr-black);
     color: var(--clr-white);
     letter-spacing: .05em;
+    box-shadow: 3px 5px 15px 4px  rgba(204, 204, 204, 0.1) ;
+}
+
+@media (max-width: 1587px) {
+    .latest-news-container {
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+        gap: 1rem
+
+    }
+
+    .card__latest-news {
+        min-width: 316px;
+        max-width: 600px;
+        padding: .5em  1em 1em 1em;
+        background: var(--clr-black);
+        color: var(--clr-white);
+        letter-spacing: .05em;
+    }
+}
+
+@media (max-width: 733px) {
+    .latest-news-container {
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        place-items: center;
+
+    }
+
+    .card__latest-news {
+        min-width: 300px;
+        max-width: 400px;
+    }
 }
 
 .card__latest-news--date {
@@ -723,7 +758,6 @@ a {
 .card__latest-news--title {
     margin-top: .5em;
     font-size: 1rem;
-    color: white;
     letter-spacing: .05em;
     font-weight: 400;
 }
@@ -742,8 +776,7 @@ a {
 .card__latest-news--text {
     font-size: 14px;
     font-weight: 300;
-    color: white;
-    /* opacity: .8; */
+    opacity: .9;
 }
 
 .card__latest-news--text p:nth-child(2) {
@@ -764,7 +797,6 @@ a {
 }
 
 @media  (max-width: 1000px)   {
-
     .section-wrapper-two {
         --page-margin-mobile: 2rem;
         width: calc(100% - var(--page-margin-mobile));
