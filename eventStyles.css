@@ -87,8 +87,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.1rem;
-    column-gap: .7em;
+    column-gap: 1em;
     row-gap: .2em;
+}
+
+
+.event-date {
+    grid-column: 1/2;
+}
+
+.event-time {
+    grid-row: 2/3;
 }
 
 .event-btn-container {
