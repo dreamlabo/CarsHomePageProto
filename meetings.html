@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/c43c1a8058.js" crossorigin="anonymous"></script>
     <title>CARS - Meetings</title>
 </head>
-<body>
+<body class="meetings-bkgd-100 meetings-min-height">
     <header class="header-wrapper">
         <div class="container flex">
             <a href="index.html" class="logo">CARS</a>
@@ -33,7 +33,7 @@
                 <div class="bar bar-two"></div>
                 <div class="bar bar-three"></div>
             </button>
-            <nav class="mobile-menu"
+            <!-- <nav class="mobile-menu"
                     id="mobile-menu"
                     aria-hidden="true">
                 <ul id="mobile-navigation"
@@ -44,47 +44,76 @@
                     <li class="mobile-nav-link"><a tabindex="-1" href="about.html"><span aria-hidden="true">02</span>WHO WE ARE</a></li>
                     <li class="mobile-nav-link"><a tabindex="-1" href="/"><span aria-hidden="true">03</span>SIGN IN</a></li>                   
                 </ul>
-            </nav>
+            </nav> -->
         </div>
     </header>
-    <div>
-        <div>
-            <main>
-                <section>
-                    <h1>Next Meeting</h1>
-                    <div>
+    <main class="meetings-bkgd-100">
+        <div class="meetings-bkgd-100">
+            <div class="meetings-section-container">
+                <div class="meetings-section-grid">
+                    <section class="meetings-meeting-details">
+                        <h1>Next Meeting</h1>
                         <div>
-                            <h2>DATE</h2>
-                            <p>Saturday, November 11th, 2023</p>
+                            <div class="meetings-grid-area">
+                                <h2>DATE</h2>
+                                <p>Saturday, November 11th, 2023</p>
+                            </div>
+                            <div class="meetings-grid-area">
+                                <h2>TIME</h2>
+                                <p>6:00pm</p>
+                            </div>
+                            <div class="meetings-grid-area">
+                                <h2>PLACE</h2>
+                                <div>
+                                    <p>This month Kent is hosting (Thanks Kent!).</p>
+                                    <p>For directions to join the meeting and to RSVP, email insertEmailHere@mail.com</p>
+                                </div>
+                            </div>  
+                            <!-- <div class="meetings-grid-area"> -->
+                                <!-- <h2 class="additional-info-header">ADDITIONAL INFO</h2>
+                                <div class="meetings-grid-area">
+                                    <div class="additional-info-container">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quidem?.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, nihil.</p>
+                                    </div>
+                                </div> -->
+                            
                         </div>
-                        <div>
-                            <h2>TIME</h2>
-                            <p>6:00pm</p>
+                    </section>
+                    <section class="general-meeting-info">
+                        <h1>Meetings</h1>
+                        <p>Meetings are generally held the last Saturday of the month and are open to everyone, regardless of background or experience.</p>
+                        <p>Bring an open mind and a love for diverse sounds as we explore the world of progressive rock together.</p>
+                        <p>BYOB/food is encouraged, and feel free to bring CDs, DVDs, Vinyl, or links to play. Hope to see you there!</p>
+                    </section>
+                </div>
+            </div>
+            <div id="image-container" class="meetings-bkgd-200">
+                <div class="meetings-section-container">
+
+                    <div class="meetings-images-container">
+                        <div class="meetings-img-one--container">
+                            <img class="meetings-img-one" src="./images/turntable.png" alt="turntable">
                         </div>
-                        <div>
-                            <h2>PLACE</h2>
-                            <p>This month Kent is hosting (Thanks Kent!).</p>
-                            <p>For directions to join the meeting and to RSVP, email insertEmailHere@mail.com</p>
+                        <div class="meetings-img-two--container">
+                            <img  class="meetings-img-two" src="./images/kidSinging.png" alt="Scott"> 
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <h1></h1>
-                    <p>Meetings are generally held the last Saturday of the month and are open to everyone, regardless of background or experience.</p>
-                    <p>Bring an open mind and a love for diverse sounds as we explore the world of progressive rock together.</p>
-                    <p>BYOB/food is encouraged, and feel free to bring CDs, DVDs, Vinyl, or links to play. Hope to see you there!</p>
-                </section>
-                <div>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
-    </div>
-    <footer>
-        
+    </main>
+    <footer class="main-footer-wrapper">
+        <div class="main-footer-container">
+            <ul class="social-media-icons">
+                <li class="social-icon"><a href="https://www.facebook.com/ColoradoArtRockSociety"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li class="social-icon"><a href="https://mastodon.social/explore"><i class="fa-brands fa-mastodon fa-2xl"></i></a></li>
+                <li class="social-icon"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li class="social-icon"><a href="https://open.spotify.com/"><i class="fa-brands fa-spotify fa-2xl"></i></a></li>
+            </ul>
+            <p>WEBSITE BY LCR DESIGNS</p>
+            <p><span>&#169;</span>2023 THE COLORADO ART ROCK SOCIETY</p>
+        </div>
     </footer>
 </body>
 </html>
