@@ -8,6 +8,7 @@ const firstFocusElem = mobileMenuBtn;
 
 document.addEventListener('DOMContentLoaded', function() {
     // Close the menu on page load
+    console.log("kljhgcv")
     closeMobileMenu();
 });
 
@@ -19,12 +20,16 @@ function handleMobileMenuBtn(event) {
 
 
 function closeMobileMenu() {
+    console.log('calling close');
     mobileMenuBtn.setAttribute('aria-expanded', "false");
     mobileMenu.setAttribute('aria-hidden', "true");
     isMobileMenuOpen = false;
     mobileMenu.classList.remove("menu-open")
     mobileMenuBtn.classList.remove("active");
-    mainPageWrapper.style.zIndex = "1"
+    if(mainPageWrapper) {
+        mainPageWrapper.style.zIndex = "1"
+    }
+    
     for(i of mobileNavLinks){
         i.firstChild.tabIndex = -1;
    }
@@ -34,20 +39,24 @@ function closeMobileMenu() {
 }
 
 function openMobileMenu(event) {
+
    
     mobileMenuBtn.setAttribute('aria-expanded', "true");
     mobileMenu.setAttribute('aria-hidden', "false");
-    isMobileMenuOpen = true
-    mobileMenu.classList.add("menu-open")
+    isMobileMenuOpen = true;
+    mobileMenu.classList.add("menu-open");
     mobileMenuBtn.classList.add("active");
-    mainPageWrapper.style.zIndex = "-1"
+    if(mainPageWrapper) {
+        mainPageWrapper.style.zIndex = "-1";
+    }
+   
     
    for(i of mobileNavLinks){
         i.firstChild.tabIndex = 0;
    }
 
-   document.addEventListener('keydown', navigateMenu)
-   window.addEventListener('resize', handleScreenResizeMobileMenu)
+   document.addEventListener('keydown', navigateMenu);
+   window.addEventListener('resize', handleScreenResizeMobileMenu);
 }
 
 function handleScreenResizeMobileMenu() {
