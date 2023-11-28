@@ -216,7 +216,7 @@
     opacity: 0.7;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .meetings-images-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 220px 28px 224px;
@@ -242,7 +242,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .meetings-img-one--container::after {
         width: 130%;
     }
@@ -253,7 +253,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .meetings-images-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 150px 28px 160px;
@@ -279,7 +279,7 @@
     }
 }
 
-@media (max-width: 730px) {
+@media screen and (max-width: 730px) {
     .meetings-section-grid {
         padding: 2rem 1.5rem 9rem 2rem;
     }
@@ -300,7 +300,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     /* .meetings-images-container {
         grid-template-columns: 1fr 1fr;
     } */
@@ -318,7 +318,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .meetings-section-grid {
         padding: 2rem 1.5rem 4rem 2rem;
     }
@@ -343,7 +343,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .meetings-section-grid {
         padding: 0rem 0rem 14rem 0rem;        
     }
@@ -410,7 +410,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .meetings-images-container {
         grid-template-rows: 70px 20px 50px;
     }
@@ -437,14 +437,14 @@
     }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .meetings-grid-area {
         grid-template-columns: 1fr;
         column-gap: 0;
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .meetings-meeting-details {
         padding: 1em 1.4em 2em 1em;
     }
@@ -458,7 +458,7 @@
     }
 }
 
-@media (max-width: 350px) {
+@media screen and (max-width: 350px) {
     .meetings-section-grid {
         padding: 0rem 0rem 10rem 0rem;        
     }
@@ -469,13 +469,13 @@
     }
 }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 300px) {
     .meetings-section-grid {
         padding: 0rem 0rem 8rem 0rem;        
     }
 }
 
-@media (max-width: 230px) {
+@media screen and (max-width: 230px) {
     .meetings-section-grid {
         padding: 0rem 0rem 5rem 0rem;        
     }

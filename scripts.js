@@ -5,6 +5,7 @@ const mainPageWrapper = document.getElementById("main-page-wrapper")
 const mobileNavLinks = document.getElementsByClassName("mobile-nav-link");
 const lastFocusElem = mobileNavLinks[mobileNavLinks.length - 1].getElementsByTagName('a')[0]
 const firstFocusElem = mobileMenuBtn;
+closeMobileMenu();
 
 mobileMenuBtn.addEventListener('click', handleMobileMenuBtn)
 
