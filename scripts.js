@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMobileMenu();
 });
 
+window.addEventListener('pageshow', function(event) {
+    // Check if the event persisted across page loads (e.g., using the back button)
+    if (event.persisted) {
+        // Close the mobile menu
+        closeMobileMenu();
+    }
+});
+
 mobileMenuBtn.addEventListener('click', handleMobileMenuBtn)
 
 function handleMobileMenuBtn(event) {
