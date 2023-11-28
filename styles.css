@@ -223,7 +223,7 @@ a {
     right: 0;
     min-width: 100%;
     min-height: calc(100vh - 53px);
-    overflow: scroll;
+    overflow-x: scroll;
     padding-top: 1rem;   
     background-color: var(--clr-gray);
     color: var(--clr-white);
@@ -231,12 +231,13 @@ a {
     transform: scaleX(0);
     transform-origin: 100%;
     transition: transform .2s ease-in-out;
-    z-index: 400;
+    z-index: -1;
 }
 
 .mobile-menu.menu-open {
     transform: scaleX(1);
     transform-origin: 100%;
+    z-index: 400;
 }
 
 .mobile-nav-link  {
