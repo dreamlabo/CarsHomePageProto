@@ -55,6 +55,7 @@ a {
     bottom: 0;
     z-index: -2;
     filter: grayscale(95%);
+   
 }
 
 .overlay {
@@ -275,8 +276,6 @@ a {
     margin: 0 auto;
 }
 
-
-
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -340,7 +339,6 @@ a {
     border: 3px solid transparent;
     background: var(--clr-main);
     font-weight: 500;
-    /* font-size: 1.5rem; */
     font-size: clamp(1.1rem, 2.3vw, 1.5rem);
     line-height: 1;
     letter-spacing: .1rem;
@@ -652,6 +650,11 @@ a {
         grid-template-columns: 1fr;
         margin-left: 1rem;
         margin-right: .8rem
+    }
+
+    .btn-main {
+        margin-top: 1.7rem;
+
     }
 }
 
@@ -980,6 +983,82 @@ a {
         font-size: .8rem;
     }
 }
+
+
+.coming-soon {
+    font-size: 1rem;
+    text-align: left;
+    /* margin-left: 1em; */
+    max-width: 30ch;
+}
+
+
+
+
+.coming-soon__container {
+    float: right;
+    display: grid;
+    grid-template-columns: 0px 300px;
+    grid-template-rows: repeat(3, min-content);
+    place-items: start;
+    margin-bottom: .5rem;
+}
+
+.coming-soon--oops {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 1.4rem;
+}
+
+.coming-soon--one {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: .8em;
+    
+}
+
+.coming-soon--two {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: .8em;
+
+}
+
+@media screen and (max-width: 700px) {
+    .coming-soon__container {
+        grid-template-columns:  4px 270px;
+
+    }
+} 
+
+@media screen and (max-width: 615px) {
+    .coming-soon__container {
+        grid-template-columns:  4px 240px;
+
+    }
+} 
+
+@media screen and (max-width: 350px) {
+    .coming-soon__container {
+        grid-template-columns:  4px 200px;
+
+    }
+
+    .coming-soon--one,
+    .coming-soon--two {
+        margin-left: 0; 
+    }
+    
+} 
+
+/* @media screen and (max-width: 250px) {
+    .coming-soon__container {
+        grid-template-columns:  0px 200px;
+
+    }
+}  */
+    
+
 
 
 

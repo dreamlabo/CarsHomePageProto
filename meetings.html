@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./styles/meetingStyles.css">
     <script src="scripts.js" defer></script>
+    <script src="./scripts/meetingsInfo.js" defer></script>
+    <script src="./scripts/meetings_MeetingsPage.js" defer></script>
     <script src="https://kit.fontawesome.com/c43c1a8058.js" crossorigin="anonymous"></script>
     <title>CARS - Meetings</title>
 </head>
@@ -52,9 +54,9 @@
         <div class="meetings-bkgd-100">
             <div class="meetings-section-container">
                 <div class="meetings-section-grid">
-                    <section class="meetings-meeting-details">
+                    <section id="meeting-details-section"class="meetings-meeting-details">
                         <h1>Next Meeting</h1>
-                        <div>
+                        <!-- <div>
                             <div class="meetings-grid-area">
                                 <h2>DATE</h2>
                                 <p>Saturday, November 11th, 2023</p>
@@ -78,8 +80,7 @@
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, nihil.</p>
                                 </div>
                             </div>
-                            
-                        </div>
+                        </div> -->
                     </section>
                     <section class="general-meeting-info">
                         <h1>Meetings</h1>
@@ -116,5 +117,42 @@
             <p><span>&#169;</span>2023 THE COLORADO ART ROCK SOCIETY</p>
         </div>
     </footer>
+
+    <template id="meeting-details-template">
+        <div>
+            <div class="meetings-grid-area">
+                <h2>DATE</h2>
+                <p id="date">Saturday, November 11th, 2023</p>
+            </div>
+            <div class="meetings-grid-area">
+                <h2>TIME</h2>
+                <p id="meeting-time">6:00pm</p>
+            </div>
+            <div class="meetings-grid-area">
+                <h2>PLACE</h2>
+                <div>
+                    <p id="meeting-place-one"></p>
+                    <p id="meeting-place-two"></p>
+                </div>
+            </div>  
+
+        </div>
+    </template>
+
+    <template id="additional-info-template">
+        <h2 class="additional-info-header">ADDITIONAL INFO</h2>
+        <div class="meetings-grid-area">
+            <div class="additional-info-container">
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quidem?.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, nihil.</p> -->
+            </div>
+        </div>
+    </template>
+
+    <template id="coming-soon-template">
+        <p class="meetings-coming-soon">Oops...</p>
+        <p class="meetings-coming-soon">We're still in the process of planning the next meeting.</p>
+        <p class="meetings-coming-soon">Stay tuned for details.</p>
+    </template>
 </body>
 </html>

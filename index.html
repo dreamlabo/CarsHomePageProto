@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <script src="./scripts/homePageScripts.js" defer></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./scripts/meetingsInfo.js" defer></script>
+    <script src="./scripts/meetingsHomePage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c43c1a8058.js" crossorigin="anonymous"></script>
     <title>CARS - Home</title>
 </head>
@@ -64,15 +66,15 @@
                         </p>
                         <button class="btn-main">BECOME A MEMBER</button>
                     </div>
-                    <div class="hero-section--meeting-info">
-                        <h2 class="hero-section--meeting-title">Next <span class="meeting-span">Meeting</span></h2>
-                        <div class="meeting-info__container">
-                            <p class="meeting-info__day">Saturday,</p>
-                            <p class="meeting-info__month">November</p>
-                            <div class="meeting-info__date-number">11</div>
-                            <p class="meeting-time">6:00pm<p> 
+                    <div id="meeting-info" class="hero-section--meeting-info">
+                        <h2 class="hero-section--meeting-title">Next&nbsp;<span class="meeting-span">Meeting</span></h2>
+                        <!-- <div class="meeting-info__container">
+                            <p class="meeting-info__day"></p>
+                            <p class="meeting-info__month"></p>
+                            <div class="meeting-info__date-number"></div>
+                            <p class="meeting-time"><p> 
                         </div>
-                        <button class="btn-meeting-details"><span>MEETING INFO</span><i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i></button>
+                        <a href="meetings.html" class="btn-meeting-details"><span>MEETING INFO</span><i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i></a> -->
                     </div>
                 </div>
             </section>
@@ -151,5 +153,24 @@
         </div>
         <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2giS4mZL4CBebnMxKYGt5Q?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
     </footer>
+
+    <template id="meeting-info-template">
+        <div class="meeting-info__container">
+            <p class="meeting-info__day"></p>
+            <p class="meeting-info__month"></p>
+            <div class="meeting-info__date-number"></div>
+            <p class="meeting-time"><p> 
+        </div>
+        <a href="meetings.html" class="btn-meeting-details"><span>MEETING INFO</span><i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i></a>
+    </template>
+
+    
+    <template id="meeting-coming-soon-template">
+        <div class="coming-soon__container">
+            <p class="coming-soon--oops">Oops...</p>
+            <p class="coming-soon--one">We're still in the process of planning the next meeting.</p>
+            <p class="coming-soon--two">Stay tuned for more details.</p>
+        </div>
+    </template>
 </body>
 </html>
