@@ -17,6 +17,17 @@
     --max-width: 1530px;
 
     --page-width: calc(100% - 4rem);
+
+    --clr-100: #121212;
+    --clr-200: #282828;
+    --clr-300: #3F3F3F;
+
+
+    --clr-text-100: #e3dede;
+    --clr-text-200: #d3cfcf;
+    --clr-text-300: #8B8B8B;
+
+    --clr-mode-accent: #BA9FFB;
 }
 
 body {

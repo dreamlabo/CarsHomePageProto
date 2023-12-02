@@ -10,16 +10,6 @@ else {
     placeComingSoonElement();
 }
 
-// function returnUpcomingMeeting() {
-//     const currentDate = new Date();
-//     const currentDateFormatted = currentDate.toLocaleDateString('en-US', {  timeZone: 'America/Denver' });
-    
-//     return meetings.find(meeting => {
-//         const meetingDateFormatted = meeting.date.toLocaleDateString('en-US', {  timeZone: 'America/Denver' });
-//         return meetingDateFormatted >= currentDateFormatted;
-//       });
-// }
-
 function placeComingSoonElement() {
     const comingSoonTemplate = document.getElementById("meeting-coming-soon-template")
     const comingSoonElement = comingSoonTemplate.content.cloneNode(true);

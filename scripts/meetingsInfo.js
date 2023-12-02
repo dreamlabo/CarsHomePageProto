@@ -19,8 +19,6 @@ meetings = [
     }
 ]
 
-
-
 function returnUpcomingMeeting() {
     const currentDate = new Date();
     const currentDateFormatted = currentDate.toLocaleDateString('en-US', {  timeZone: 'America/Denver' });

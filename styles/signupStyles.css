@@ -1,0 +1,131 @@
+.meetings-bkgd-100 {
+    background: var(--clr-100);
+}   
+
+.signup-main-wrapper {
+    width: var(--page-width);
+    width: var(--page-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.form-section-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    /* border: 1px solid red; */
+    margin: 2rem 2rem 5rem 2rem;
+    background: var(--clr-200);
+    background: #232323;
+    border-radius: 5px;;
+}
+
+.form-section-grid::after {
+    content: "";
+    position: absolute;
+    bottom: -64px;
+    left: auto;
+    right: auto;
+    background: var(--clr-main);
+    width: 50%;
+    height: 1px;
+    opacity: .7;
+}
+
+.signup-form {
+    margin: 2rem;
+    border-radius: 5px;
+    background: var(--clr-300);
+    background: #3F3F3F;
+    background: var(--clr-200);
+    padding: 1.3rem 2rem;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2)
+} 
+
+.signup-form label,
+.signup-form input,
+.signup-form textarea {
+    display: block;
+    width: 100%;
+    color: var(--clr-text-200);
+}
+
+.signup-form label {
+    margin-top: 1em;
+    margin-bottom: .3em;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.signup-form textarea,
+.signup-form input {
+    background: var(--clr-300);
+    background: #232323;
+    border: none;
+    background: #575757;
+    background: #232323;
+    border-radius: 3px;
+    padding: .3em 1em;
+    color: var(--clr-text-200);
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.signup-form textarea {
+    height: 70px;
+    resize: none;
+}
+
+.form-top-text {
+    text-transform: uppercase;
+    color: var(--clr-mode-accent);
+    font-size: 1.7rem;
+    font-size: 12px;
+}
+
+.form-title-text {
+    padding: .2em 0;
+    color: var(--clr-text-100);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.signup-form-sub-text {
+    font-size: 1rem;
+    color: var(--clr-text-200);
+    max-width: 45ch;
+}
+
+.signup-form-btn {
+    margin-top: 1.1em;
+    background: var(--clr-main);
+    background: var(--clr-mode-accent);
+    border: none;
+    padding: .3em;
+    width: 100%;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.signup-form-btn:focus,
+.signup-form-btn:hover {
+    color: var(--clr-text-200);
+    background: var(--clr-200);
+    border-color: var(--clr-mode-accent);
+    border-radius: 3px;
+}
+
+.form-section-grid img {
+    width: 500px;
+    place-self: center;
+    height: auto;
+    opacity: .9;
+    mix-blend-mode: soft-light;
+    font-family: inherit;
+}
