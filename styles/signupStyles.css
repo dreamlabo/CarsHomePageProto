@@ -4,17 +4,15 @@
 
 .signup-main-wrapper {
     width: var(--page-width);
-    width: var(--page-width);
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1000px) {
     .signup-main-wrapper {
-        width: var(--page-width);
-        width: var(--page-width);
+        /* width: var(--page-width);
         max-width: var(--max-width);
-        margin: 0 auto;
+        margin: 0 auto; */
     }
 }
 
@@ -44,7 +42,6 @@
 @media screen and (max-width: 1000px) {
     .signup-main-wrapper {
         width: var(--page-width);
-        width: var(--page-width);
         max-width: var(--max-width);
         margin: 0 auto;
     }
@@ -55,24 +52,25 @@
 }
 
 @media screen and (max-width: 650px) {
-
     .signup-main-wrapper {
         width: var(--page-width);
-        width: var(--page-width);
+       
         max-width: var(--max-width);
         margin: 0 auto;
     }
+
     .form-section-grid {
         margin: 2rem 0rem 1rem 0rem;
     }
 
     .form-section-grid::after {
-        bottom: -24px;
+        bottom: 0px;
         width: 85%;
     }
 }
 
 .signup-form {
+    /* border: 1px solid red; */
     margin: 2rem;
     border-radius: 5px;
     background: var(--clr-300);
@@ -107,7 +105,7 @@
     background: #575757;
     background: #232323;
     border-radius: 3px;
-    padding: .3em 1em;
+    padding: .5em 1em;
     color: var(--clr-text-200);
     font-size: 1rem;
     font-family: inherit;
@@ -133,9 +131,10 @@
 }
 
 .signup-form-sub-text {
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--clr-text-200);
-    max-width: 45ch;
+    opacity: .7;
+    /* max-width: 55ch; */
 }
 
 .signup-form-btn {
@@ -194,6 +193,7 @@
     .form-section-grid {
         grid-template-columns: 1fr;
         background: var(--clr-100);
+        margin: 0rem 0rem 0rem 0rem;
     }
 
     .signup-form {
@@ -202,23 +202,32 @@
         background: var(--clr-300);
         background: #3F3F3F;
         background: var(--clr-200);
-        padding: 2rem 1.8rem 1.5rem 1rem;
+        padding: 2em 2em 1.5em 2em;
         box-shadow: none;
         border-radius: 5px 5px 0 0;
     } 
 
+    .signup-main-wrapper {
+        width: 100%;
+    }
+
     .form-section-grid img {
         width: 230px;
-        margin: 1em 0 1em 0;
+        margin: 2em 0 2em 0;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .form-section-grid {
+
+    .signup-form {
+
+        padding: 2em 1em 1.5em 1em;
+    } 
+    /* .form-section-grid {
         margin: 0rem 0rem 0rem 0rem;
     }
 
     .signup-main-wrapper {
         width: 100%;
-    }
+    } */
 }
