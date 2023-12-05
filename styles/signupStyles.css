@@ -164,7 +164,7 @@
     width: 400px;
     place-self: center;
     height: auto;
-    opacity: .9;
+    /* opacity: .9; */
     mix-blend-mode: soft-light;
     font-family: inherit;
 }
@@ -215,6 +215,8 @@
     .form-section-grid img {
         width: 230px;
         margin: 2em 0 2em 0;
+        mix-blend-mode:screen;
+        opacity: .6;
     }
 }
 
