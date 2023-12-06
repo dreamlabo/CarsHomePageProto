@@ -27,7 +27,7 @@
     border-radius: 5px;;
 }
 
-.form-section-grid::after {
+/* .form-section-grid::after {
     content: "";
     position: absolute;
     bottom: -64px;
@@ -37,7 +37,7 @@
     width: 50%;
     height: 1px;
     opacity: .7;
-}
+} */
 
 @media screen and (max-width: 1000px) {
     .signup-main-wrapper {
@@ -67,10 +67,12 @@
         bottom: 0px;
         width: 85%;
     }
+
 }
 
 .signup-form {
     /* border: 1px solid red; */
+    position: relative;
     margin: 2rem;
     border-radius: 5px;
     background: var(--clr-300);
@@ -121,7 +123,7 @@
     text-transform: uppercase;
     color: var(--clr-mode-accent);
     font-size: 1.7rem;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .form-title-text {
@@ -132,7 +134,7 @@
 }
 
 .signup-form-sub-text {
-    font-size: .9rem;
+    font-size: 1rem;
     color: var(--clr-text-200);
     opacity: .7;
     /* max-width: 55ch; */
@@ -191,11 +193,18 @@
 }
 
 @media screen and (max-width: 550px) {
+
+    .meetings-bkgd-100
     .form-section-grid {
         grid-template-columns: 1fr;
-        background: var(--clr-100);
+        background: var(--clr-200);
         margin: 0rem 0rem 0rem 0rem;
     }
+
+    .meetings-bkgd-100 {
+        /* background: var(--clr-200); */
+    }
+
 
     .signup-form {
         margin: 0rem;
@@ -208,6 +217,19 @@
         border-radius: 5px 5px 0 0;
     } 
 
+    /* .signup-form::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        background: var(--clr-main);
+        width: 88%;
+        height: 1px;
+        opacity: .7;
+    } */
+
     .signup-main-wrapper {
         width: 100%;
     }
@@ -215,8 +237,8 @@
     .form-section-grid img {
         width: 230px;
         margin: 2em 0 2em 0;
-        mix-blend-mode:screen;
-        opacity: .6;
+        /* mix-blend-mode:screen; */
+        /* opacity: .6; */
     }
 }
 
