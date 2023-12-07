@@ -24,7 +24,7 @@
     margin: 2rem 2rem 5rem 2rem;
     background: var(--clr-200);
     background: #232323;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 /* .form-section-grid::after {
@@ -54,7 +54,6 @@
 @media screen and (max-width: 650px) {
     .signup-main-wrapper {
         width: var(--page-width);
-       
         max-width: var(--max-width);
         margin: 0 auto;
     }
@@ -147,7 +146,6 @@
     border: none;
     padding: .3em;
     width: 100%;
-    outline: none;
     font-size: 1.3rem;
     font-weight: 500;
     cursor: pointer;
@@ -194,7 +192,7 @@
 
 @media screen and (max-width: 550px) {
 
-    .meetings-bkgd-100
+    .meetings-bkgd-100,
     .form-section-grid {
         grid-template-columns: 1fr;
         background: var(--clr-200);
@@ -208,7 +206,7 @@
 
     .signup-form {
         margin: 0rem;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         background: var(--clr-300);
         background: #3F3F3F;
         background: var(--clr-200);

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/mainStyles.css">
-    <link rel="stylesheet" href="./styles/signupStyles.css">
+    <link rel="stylesheet" href="./styles/signinStyles.css">
     <script src="./scripts/mainScripts.js" defer></script>
+    <script src="./scripts/homePageScripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c43c1a8058.js" crossorigin="anonymous"></script>
-    <title>CARS - Signup</title>
+    <title>CARS - Home</title>
 </head>
-<body class="meetings-bkgd-100">
+<body class="signin-bkgd-color">
     <header class="header-wrapper">
         <div class="container flex">
             <a href="index.html" class="logo">CARS</a>
@@ -42,7 +44,7 @@
                     <li class="mobile-nav-link"><a tabindex="-1" onclick="closeMobileMenu()" href="meetings.html"><span aria-hidden="true">01</span>MEETINGS</a></li>
                     <li class="mobile-nav-link"><a tabindex="-1" onclick="closeMobileMenu()" href="upcomingEvents.html"><span aria-hidden="true">02</span>UPCOMING EVENTS</a></li>
                     <li class="mobile-nav-link"><a tabindex="-1" onclick="closeMobileMenu()" href="about.html"><span aria-hidden="true">03</span>WHO WE ARE</a></li>
-                    <li class="mobile-nav-link"><a tabindex="-1" onclick="closeMobileMenu()" href="signin.html"><span aria-hidden="true">04</span>SIGN IN</a></li>                   
+                    <li class="mobile-nav-link"><a tabindex="-1" onclick="closeMobileMenu()" href="/signin.html"><span aria-hidden="true">04</span>SIGN IN</a></li>                   
                 </ul>
             </nav>
         </div>
@@ -51,21 +53,15 @@
         <section class="form-section-grid">
             <form class="signup-form" action="post">
                 <p class="form-top-text">Colorado Art Rock Society</p>
-                <h1 class="form-title-text">Become A Member</h1>
-                <p class="signup-form-sub-text">Members receive updates about upcoming meeting, events, and exclusive content.</p>
-                <label for="userName">Username</label>
-                <input type="text">
+                <h1 class="form-title-text">Sign in</h1>
                 <label for="email">Email</label>
                 <input type="email">
                 <label for="password">Password</label>
                 <input type="password">
-                <label for="reenter-password">Re-enter password</label>
-                <input type="password">
-                <label for="tell-us-about-yourself">Tell us about yourself</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button class="signup-form-btn">SIGN UP</button>
+                <a class="signin-forgot-password" href="">Forgot Password</a>
+                <button class="signin-form-btn">SIGN IN</button>
             </form>
-            <div >
+            <div class="signin-right-section">
                 <img src="./images/carsLogo.png" alt="">
             </div>
         </section>
