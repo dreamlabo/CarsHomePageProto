@@ -1057,15 +1057,71 @@ a {
     .coming-soon--two {
         margin-left: 0; 
     }
-    
 } 
 
-/* @media screen and (max-width: 250px) {
-    .coming-soon__container {
-        grid-template-columns:  0px 200px;
+/* Member Spotlight Section */
+.bg-clr-dark {
+    background: var(--clr-100);
+}
 
-    }
-}  */
+
+.member-spotlight-container {
+    margin-top: 40px;
+}
+
+.spotlight-member-info {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 2em;
+    place-items: center start;
+}
+
+.spotlight-member-info h4 span:nth-child(1) {
+    display: block;
+    font-size: 1.5rem;
+     font-weight: 400;
+    color: var(--clr-main);
+    text-transform: uppercase;
+}
+
+
+.spotlight-member-info h4 span:nth-child(2) {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--clr-text-100);
+ }
+
+ .member-spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 12rem;
+ }
+
+ .member-spotlight-questions div {
+    margin-top: 28px;
+ }
+
+ .member-question-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--clr-text-200);
+ }
+
+ .member-album-list,
+ .member-answer-text {
+    margin-left: 32px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    /* font-style: italic; */
+    font-weight: 400;
+    color: var(--clr-text-100);
+
+ }
+    
+
+
     
 
 
