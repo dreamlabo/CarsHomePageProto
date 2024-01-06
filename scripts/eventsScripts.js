@@ -13,7 +13,7 @@ const events = [
     },
     {
         headliner: "Haken",
-        supportActs: ["An Evening With..."],
+        supportActs: ["An Evening With Haken"],
         date: new Date("2024,02,15"),
         time: "8:00pm",
         venue: "Boulder Theater",
@@ -22,6 +22,18 @@ const events = [
         ticketURL: "https://www.axs.com/events/502001/haken-tickets",
         bandInfo: "https://hakenmusic.com/",
         image: "./images/haken-band-image.jpg"
+    },
+    {
+        headliner: "The 2024 Progfest",
+        supportActs: [],
+        date: new Date("2024,2,18"),
+        time: "3:00pm",
+        venue: "Nissi's",
+        city: "Lafayette",
+        state: "Co",
+        ticketURL: "https://nissis.com/events/progfest-451/",
+        bandInfo: "https://www.coloradoprog.com/",
+        image: "./images/progfest-2024-small.jpg"
     },
     {
         headliner: "Soen",
@@ -86,16 +98,19 @@ const events = [
         ticketURL: "https://www.ticketmaster.com/event/1E005F3CE9994033",
         bandInfo: "https://www.rush.com/",
         image: "./images/GeddyLeeBook.jpg"
-        
     },
-    
-
 ]
 
 const whereToPlaceEvents = document.getElementById("cards-section");
-events.sort((a, b) => a.date - b.date);
 
-events.forEach(event => {
+// Filter out the events that are in the past so we only show events in the future
+const currentDate = new Date();
+const futureEvents = events.filter(event => event.date >= currentDate);
+console.log("Future", futureEvents)
+
+futureEvents.sort((a, b) => a.date - b.date);
+
+futureEvents.forEach(event => {
     const eventTemplate = document.getElementById("event-item-template");
     const eventItem = eventTemplate.content.cloneNode(true);
 
@@ -126,7 +141,9 @@ events.forEach(event => {
     eventItem.querySelector(".event-venue").innerText = event.venue;
     eventItem.querySelector(".event-location").innerText = `${event.city}, ${event.state}`;
     eventItem.querySelector(".btn-tickets").href = event.ticketURL;
+    eventItem.querySelector(".btn-tickets").target = '_blank';
     eventItem.querySelector(".btn-artist-info").href = event.bandInfo;
+    eventItem.querySelector(".btn-artist-info").target = '_blank';
 
     whereToPlaceEvents.append(eventItem);
 });
