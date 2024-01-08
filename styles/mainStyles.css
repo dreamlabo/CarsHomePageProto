@@ -1224,6 +1224,10 @@ a {
     grid-template-columns: 75px 1fr;
     align-items: start;
  }
+
+ .progFest-text-grid a {
+    color: var(--clr-main);
+ }
  
  .progFest-text-grid + .progFest-text-grid {
     margin-top: 1rem;
@@ -1270,8 +1274,14 @@ a {
      .progFest-essentials-container {
         padding: 1rem 1rem;
      }
- }
+     
+    }
 
+    .italics {
+        font-style: italic;
+     }
+
+  
     
 
 

@@ -61,9 +61,9 @@ const events = [
     },
     {
         headliner: "Sleep Token",
-        supportActs: [],
+        supportActs: [], 
         date: new Date("2024,5,12"),
-        time: "8:00pm",
+        time: "6:30pm",
         venue: "Red Rocks Amphitheater",
         city: "Morrison",
         state: "Co",
@@ -85,7 +85,7 @@ const events = [
     },
     {
         headliner: "The Ocean",
-        supportActs: ["The World Is A Beautiful Place & I Am No Longer Afraid To Die"],
+        supportActs: ["The World Is A Beautiful Place & I Am No Longer Afraid To Die", "Shy", "Low"],
         date: new Date("2024,02,20"),
         time: "8:00pm",
         venue: "Bluebird Theater",
