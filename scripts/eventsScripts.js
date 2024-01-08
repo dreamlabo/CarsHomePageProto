@@ -12,6 +12,18 @@ const events = [
         image: "./images/musicalBox.jpg"
     },
     {
+        headliner: "Tool",
+        supportActs: ['Elder'],
+        date: new Date("2024,2,05"),
+        time: "7:30pm",
+        venue: "Ball Arena",
+        city: "Denver",
+        state: "Co",
+        ticketURL: "https://www.axs.com/events/507475/tool-tickets",
+        bandInfo: "https://www.toolband.com/home",
+        image: "./images/tool-tix-concerts.jpg"
+    },
+    {
         headliner: "Haken",
         supportActs: ["An Evening With Haken"],
         date: new Date("2024,02,15"),
@@ -36,9 +48,32 @@ const events = [
         image: "./images/progfest-2024-small.jpg"
     },
     {
+        headliner: "Sleepytime Gorrila Museum",
+        supportActs: ['Dreadnought', 'Surplus 1980 featuring Moe Staiano'],
+        date: new Date("2024,3,7"),
+        time: "7:00pm",
+        venue: "Bluebird Theater",
+        city: "Denver",
+        state: "Co",
+        ticketURL: "https://www.axs.com/events/506879/sleepytime-gorilla-museum-tickets",
+        bandInfo: "https://www.facebook.com/sleepytimegorillamuseum/",
+        image: "./images/sleepytime-gorilla-concert.jpg"
+    },
+    {
+        headliner: "Sleep Token",
+        supportActs: [],
+        date: new Date("2024,5,12"),
+        time: "8:00pm",
+        venue: "Red Rocks Amphitheater",
+        city: "Morrison",
+        state: "Co",
+        ticketURL: "https://www.axs.com/events/520382/sleep-token-tickets",
+        bandInfo: "https://www.sleep-token.com/",
+        image: "./images/sleep-token-concert.jpg"
+    },
+    {
         headliner: "Soen",
         supportActs: [],
-       
         date: new Date("2024,06,09"),
         time: "7:30pm",
         venue: "Bluebird Theater",
