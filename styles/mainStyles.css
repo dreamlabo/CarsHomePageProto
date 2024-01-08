@@ -1174,8 +1174,14 @@ a {
     margin-top: 2rem;
  }
 
+ @media screen and (max-width: 900px) {
+    .progFest-grid {
+        column-gap: 2rem;
+    }
+ }
+
  .progFest-grid p {
-    color: var(--clr-white)
+    color: var(--clr-text-100)
  }
 
  .progFest-grid img {
@@ -1193,7 +1199,7 @@ a {
 
  .progFest-essentials-container h4 {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: var(--clr-main)
  }
@@ -1201,13 +1207,14 @@ a {
  .progFest-essentials-container h4:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left:0;
     height: 1px;
     width: 100%;
     background: var(--clr-main);
     opacity: .3;
  }
+ 
  .progFest-details-container {
     margin-top: 1.3rem;
  }
@@ -1234,15 +1241,35 @@ a {
     font-weight: 300;
  }
 
+
+ @media screen and (max-width: 1000px) {
+    .progFest-essentials-container h4 {
+        font-size: clamp(1.2rem, 2vw + 10px, 1.8rem);
+     }
+ }
+
+ @media screen and (max-width: 716px) {
+    .progFest-grid {
+       margin-top: 1rem;
+     }
+
+    .progFest-grid--left {
+        margin-top: 2rem;
+    }
+
+    .progFest-grid--right {
+        order: -1;
+    }
+}
+
  @media screen and (max-width: 400px) {
     .progFest-grid {
-        display: grid;
         grid-template-columns: 1fr;
-        column-gap: 4rem;
-        color: white;
-        margin-top: 2rem;
      }
-    
+
+     .progFest-essentials-container {
+        padding: 1rem 1rem;
+     }
  }
 
     
