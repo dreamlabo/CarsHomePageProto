@@ -1160,6 +1160,118 @@ a {
      }
 
  }
+
+
+ .progFest-container {
+    /* background: black; */
+ }
+
+ .progFest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 4rem;
+    color: white;
+    margin-top: 2rem;
+ }
+
+ @media screen and (max-width: 900px) {
+    .progFest-grid {
+        column-gap: 2rem;
+    }
+ }
+
+ .progFest-grid p {
+    color: var(--clr-text-100)
+ }
+
+ .progFest-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+ }
+
+ .progFest-essentials-container {
+    margin-top: 2rem;
+    background: #232323;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+ }
+
+ .progFest-essentials-container h4 {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--clr-main)
+ }
+ 
+ .progFest-essentials-container h4:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left:0;
+    height: 1px;
+    width: 100%;
+    background: var(--clr-main);
+    opacity: .3;
+ }
+ 
+ .progFest-details-container {
+    margin-top: 1.3rem;
+ }
+
+ .progFest-text-grid {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: start;
+ }
+ 
+ .progFest-text-grid + .progFest-text-grid {
+    margin-top: 1rem;
+ }
+
+ .progFest-text-grid h5 {
+    font-size: 1rem;
+    color: var(--clr-text-300);
+    font-weight: 400;
+ }
+
+ .progFest-text-grid p {
+    font-size: 1rem;
+    color: var(--clr-text-100);
+    font-weight: 300;
+ }
+
+
+ @media screen and (max-width: 1000px) {
+    .progFest-essentials-container h4 {
+        font-size: clamp(1.2rem, 2vw + 10px, 1.8rem);
+     }
+ }
+
+ @media screen and (max-width: 716px) {
+    .progFest-grid {
+       margin-top: 1rem;
+     }
+
+    .progFest-grid--left {
+        margin-top: 2rem;
+    }
+
+    .progFest-grid--right {
+        order: -1;
+    }
+}
+
+ @media screen and (max-width: 400px) {
+    .progFest-grid {
+        grid-template-columns: 1fr;
+     }
+
+     .progFest-essentials-container {
+        padding: 1rem 1rem;
+     }
+ }
+
     
 
 
